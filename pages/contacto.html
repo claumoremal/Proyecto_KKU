@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>KKU - Contacto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__div--logo">            
+            <a href="../index.html"><img src="../images/logo_chico.JPG" alt="logo chico" title="logo chico"></a>
+        </div>
+        <nav class="header__div--nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="bikes_for_sale.html">Bikes for sale</a></li>
+                <li><a href="kkulifestile.html">KKU lifestile</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="bikes_for_sale.html"><img src="../images/carrito.JPG" alt="carrito" title="carrito"></a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div class="estilo__seccion">
+        <h2>Contacto</h2>
+        <section>
+            <form action="">
+                <fieldset>
+                    <label class="estilo__contacto" for="Nombre">Nombre</label>
+                    <input type="text " name="Nombre">
+                    <label class="estilo__contacto" for="Telefono">Telefóno</label>
+                    <input type="number" name="Telefono" placeholder="+(código país) - Número" title="Por favor ingresa solo números">
+                    <label class="estilo__contacto" for="mail">Email</label>
+                    <input type="email" name="email">
+                    <label class="estilo__contacto" for="tipoArticulo">Nos contactas por:</label>
+                    <input type="checkbox" value="Motos" name="chkMotos">Motos
+                    <input type="checkbox" value="Autos" name="chkAutos">Autos
+                    <input type="checkbox" value="Merchandising" name="merchandising"> Merchandising 
+                    <label class="estilo__contacto" for="adheridoKKU">Aderido al plan KKU Lifestile</label>
+                    <input type="radio" name="rbutSi">Si
+                    <input type="radio" name="rbutNo" checked>No 
+                    <label class="estilo__contacto" for="quieroAdeherirme">Quieres Adherirte al plan?</label>
+                    <select name="AdherirAKku" id="">
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                    <label class="estilo__contacto" for="mensaje">Mensaje:</label>
+                    <textarea class="estilo__contacto" name="mensaje" placeholder="Escribenos aquí tu mensaje" cols="30" rows="10"></textarea>
+                    <input type="submit" name="enviarForm">
+                    <input type="reset" name="limparForm">
+                </fieldset>  
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__izq">
+            <a class="footer__izq--a" href="../pages/contacto.html">Contacto</a>
+            <p class="footer__izq--a">mail@kku.uy - +598 000 000</p>
+            <a href="https://www.instagram.com/kustomkultureuruguay/"><img src="../images/logoinsta.JPG" alt=""></a>
+            <a href="https://www.facebook.com/kustomkulturemotorcycles"><img src="../images/logofacebook.JPG" alt="facebook footer" title="facebook footer"></a>
+        </div>
+        <div>
+            <img class="footer__logo" src="../images/logo_cuadrado.JPG" alt="kku footer" title="kku footer">
+        </div>
+        <div class="footer__der">
+            <p>BrainIT 2022 - Todos los derechos reservados</p>
+        </div>          
+    </footer>
+</body>
+</html>
