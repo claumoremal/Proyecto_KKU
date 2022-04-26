@@ -21,17 +21,12 @@ a{
     
 }
 .header__div--nav{
-    display: inline-block;
-    margin: 10px;
     padding: 10px;
 }
-.header__div--logo{    
-    display: inline-block;
-    margin: 10px;
+.header__div--logo{
     padding: 10px;
 }
 nav ul li{
-    display: inline;
     list-style: none;
     margin: 10px;
     padding: 10px;    
@@ -47,7 +42,6 @@ nav ul li a{
     text-transform: uppercase;
 }
 .estilo__seccion{
-    height: fit-content;
     background-color: gray;
     padding: 100px;
     margin: 0px;
@@ -55,11 +49,9 @@ nav ul li a{
     text-decoration: none;
 }
 .estilo__contacto{
-    height: fit-content;
     padding: 15px;
     margin: auto;
     text-align: center;
-    display: block;
     font-weight: bold;
 }
 .ventaMotos__card{
@@ -92,8 +84,6 @@ nav ul li a{
 }
 .footer__logo{    
     padding: 10px;
-    display: block;
-    margin: auto;
 }
 .footer__der{
     text-align: right;
