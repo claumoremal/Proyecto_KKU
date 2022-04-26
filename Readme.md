@@ -1,6 +1,6 @@
 <img src="images/logo_chico.JPG" alt="logo chico" title="logo chico">
 
-# Desarrollo de pagina web para Kustom Kulture Uruguay
+# Desarrollo de sitio web para Kustom Kulture Uruguay
 
 Kustom Kulture Uruguay (KKU) es un taller de customización de motos
 
