@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--libreria boostrap-->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <!--mi css-->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+    <div class="contenedorPrincipal">
     <header class="header">
         <div class="header__div--logo">            
             <a href="../index.html"><img src="../images/logo_chico.JPG" alt="logo chico" title="logo chico"></a>
@@ -22,11 +20,12 @@
                 <li><a href="bikes_for_sale.html">Bikes for sale</a></li>
                 <li><a href="kkulifestile.html">KKU lifestile</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="bikes_for_sale.html"><img src="../images/carrito.JPG" alt="carrito" title="carrito"></a></li>
             </ul>
-        </nav>
-    </header>
-    
+        </nav> 
+        <div class="header__div--carrito">            
+            <a href="../pages/bikes_for_sale.html"><img src="../images/carrito.JPG" alt="carrito" title="carrito"></a>
+        </div>
+    </header>    
     <div>        
         <section class="estilo__seccion">
             <h2>Nuestras Instalaciones</h2>
@@ -38,6 +37,7 @@
                 labore voluptate, eaque aperiam quibusdam animi? Consequuntur, id. Laborum dolorum esse nulla 
                 earum repellendus iste.
             </p>
+            <hr>
         </section>
         <section class="estilo__seccion">
             <h2 id="nuestrosProyectos">Nuestros Proyectos</h2>
@@ -54,9 +54,11 @@
     <footer class="footer">
         <div class="footer__izq">
             <a class="footer__izq--a" href="../pages/contacto.html">Contacto</a>
-            <p class="footer__izq--a">mail@kku.uy - +598 000 000</p>
-            <a href="https://www.instagram.com/kustomkultureuruguay/"><img src="../images/logoinsta.JPG" alt=""></a>
-            <a href="https://www.facebook.com/kustomkulturemotorcycles"><img src="../images/logofacebook.JPG" alt="facebook footer" title="facebook footer"></a>
+            <p>mail@kku.uy - +598 000 000</p>
+            <div>                
+                <a href="https://www.instagram.com/kustomkultureuruguay/"><img src="../images/logoinsta.JPG" alt=""></a>
+                <a href="https://www.facebook.com/kustomkulturemotorcycles"><img src="../images/logofacebook.JPG" alt="facebook footer" title="facebook footer"></a>
+            </div>
         </div>
         <div>
             <img class="footer__logo" src="../images/logo_cuadrado.JPG" alt="kku footer" title="kku footer">
@@ -65,7 +67,6 @@
             <p>BrainIT 2022 - Todos los derechos reservados</p>
         </div>          
     </footer>
-<!--Script de boostrap-->
-<script src="../js/bootstrap.bundle.js"></script>
+    </div>
 </body>
 </html>

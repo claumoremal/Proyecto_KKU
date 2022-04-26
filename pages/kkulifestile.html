@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--libreria boostrap-->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <!--mi css-->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+    <div class="contenedorPrincipal__LifeStyle">
     <header class="header">
         <div class="header__div--logo">            
             <a href="../index.html"><img src="../images/logo_chico.JPG" alt="logo chico" title="logo chico"></a>
@@ -22,27 +20,31 @@
                 <li><a href="bikes_for_sale.html">Bikes for sale</a></li>
                 <li><a href="kkulifestile.html">KKU lifestile</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="bikes_for_sale.html"><img src="../images/carrito.JPG" alt="carrito" title="carrito"></a></li>
             </ul>
-        </nav>
-    </header>
+        </nav> 
+        <div class="header__div--carrito">            
+            <a href="../pages/bikes_for_sale.html"><img src="../images/carrito.JPG" alt="carrito" title="carrito"></a>
+        </div>
+    </header> 
    
-    <section class="estilo__seccion">
+    <section class="estilo__seccion1">
         <div>
             <h2>KKU Lifestyle</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores fugit similique sequi corrupti. 
             Mollitia laborum labore pariatur explicabo aliquam laudantium ullam magnam nemo beatae. Alias vero iusto repellat magnam!</p>
         </div>
+        <hr>
     </section>
-    <section class="estilo__seccion">        
-        <div>
+    <section class="estilo__seccion2">        
+        <div class="estilo__imagen">
             <h2>Eventos & Rides</h2>
             <img src="../images/eventos&rides.JPG" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit molestiae inventore at praesentium magni 
             illum ipsum sit voluptas, similique pariatur, ipsam delectus, dignissimos eius repellendus ducimus in fugit aliquid!</p>
         </div>
+        <hr>
     </section>
-    <section class="estilo__seccion">
+    <section class="estilo__seccion3">
         <h2>Proximos Eventos</h2>
         <iframe src="https://calendar.google.com/calendar/embed?src=es.uy%23holiday%40group.v.calendar.google.com&ctz=America%2FMontevideo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </section>
@@ -50,9 +52,11 @@
     <footer class="footer">
         <div class="footer__izq">
             <a class="footer__izq--a" href="../pages/contacto.html">Contacto</a>
-            <p class="footer__izq--a">mail@kku.uy - +598 000 000</p>
-            <a href="https://www.instagram.com/kustomkultureuruguay/"><img src="../images/logoinsta.JPG" alt=""></a>
-            <a href="https://www.facebook.com/kustomkulturemotorcycles"><img src="../images/logofacebook.JPG" alt="facebook footer" title="facebook footer"></a>
+            <p>mail@kku.uy - +598 000 000</p>
+            <div>                
+                <a href="https://www.instagram.com/kustomkultureuruguay/"><img src="../images/logoinsta.JPG" alt=""></a>
+                <a href="https://www.facebook.com/kustomkulturemotorcycles"><img src="../images/logofacebook.JPG" alt="facebook footer" title="facebook footer"></a>
+            </div>
         </div>
         <div>
             <img class="footer__logo" src="../images/logo_cuadrado.JPG" alt="kku footer" title="kku footer">
@@ -61,7 +65,6 @@
             <p>BrainIT 2022 - Todos los derechos reservados</p>
         </div>          
     </footer>
-<!--Script de boostrap-->
-<script src="../js/bootstrap.bundle.js"></script>
+    </div>
 </body>
 </html>
