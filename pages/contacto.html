@@ -31,36 +31,47 @@
    
     <div class="estilo__seccion">
         <section>
-            <p> Contacto
-                +598 000 000
+            <h2>Contacto</h2>
+            <p> +598 000 000
                 mail@kku.uy</p>
         </section>
-        <section>            
-            <h2>Contacto</h2>
-            <fieldset>
-                <label class="estilo__contacto" for="Nombre">Nombre</label>
-                <input type="text " name="Nombre">
-                <label class="estilo__contacto" for="Telefono">Telefóno</label>
-                <input type="number" name="Telefono" placeholder="+(código país) - Número" title="Por favor ingresa solo números">
-                <label class="estilo__contacto" for="mail">Email</label>
-                <input type="email" name="email">
-                <label class="estilo__contacto" for="tipoArticulo">Nos contactas por:</label>
-                <input type="checkbox" value="Motos" name="chkMotos">Motos
-                <input type="checkbox" value="Autos" name="chkAutos">Autos
-                <input type="checkbox" value="Merchandising" name="merchandising"> Merchandising 
-                <label class="estilo__contacto" for="adheridoKKU">Aderido al plan KKU Lifestile</label>
-                <input type="radio" name="rbutSi">Si
-                <input type="radio" name="rbutNo" checked>No 
-                <label class="estilo__contacto" for="quieroAdeherirme">Quieres Adherirte al plan?</label>
-                <select name="AdherirAKku" id="">
-                    <option value="si">Si</option>
-                    <option value="no">No</option>
-                </select>
-                <label class="estilo__contacto" for="mensaje">Mensaje:</label>
-                <textarea class="estilo__contacto" name="mensaje" placeholder="Escribenos aquí tu mensaje" cols="30" rows="10"></textarea>
-                <input type="submit" name="enviarForm">
-                <input type="reset" name="limparForm">
-            </fieldset>   
+        <section>         
+            <form>
+                <div class="row mb-3">
+                    <label for="inputName" class="col-sm-2 estilo__contacto">Nombre</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputName">
+                    </div>
+                  </div>
+                <div class="row mb-3">
+                    <label for="inputApellido" class="col-sm-2 estilo__contacto">Apellido</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputApellido">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 estilo__contacto">Telefono</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="inputEmail3" name="Telefono" placeholder="+(código país) - Número" title="Por favor ingresa solo números">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputMail" class="col-sm-2 estilo__contacto">Correo Eléctronico</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" id="inputMail" type="email" name="email">
+                  </div>
+                </div>
+                <div>
+                    <label class="estilo__contacto" for="adheridoKKU">Aderido al plan KKU Lifestile</label>
+                    <input type="radio" name="rbutSi">Si
+                    <input type="radio" name="rbutNo">No 
+                </div>
+                <div>
+                    <label class="estilo__contacto" for="mensaje">Mensaje:</label>
+                    <textarea class="estilo__contacto" name="mensaje" placeholder="Escribenos aquí tu mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" name="enviarForm">Enviar</button>
+                <button type="reset" class="btn btn-primary" name="limpiarForm">Restablecer</button>
             </form>
         </section>
     </div>
