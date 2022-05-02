@@ -1,15 +1,10 @@
 /*----Estilos generales-----*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;500;600&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
-    overflow-y: auto;
-    overflow-x: hidden;
+    color: black;
 }
 html{
     font-size: 100%;
@@ -22,14 +17,6 @@ hr{
 a{
     text-decoration: none;
     color: black;
-}
-.contenedorPrincipal__Index{
-    display: grid;
-    grid-template-areas: 
-        "section1"
-        "section2"
-        "section3"
-        "footer";
 }
 .contenedorPrincipal__venta{
     display: grid;
@@ -79,31 +66,26 @@ nav ul li a:hover{
 }
 
 /*---Estilos sections---*/
-
+.video__container {
+    top: 0%;
+    left: 0%;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+  }
+.container {
+    position: relative;
+    z-index: 2;
+  }
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
 .estilo__seccion{
     grid-area: section;
-    height: fit-content;
-    background-color: gray;
-    padding: 100px;
-    margin: 0px;
-    text-align: center;
-    text-decoration: none;
-}
-.estilo__seccion1{
-    grid-area: section1;
-    grid-row: 2/3;
-    align-items: center;
-    height: fit-content;
-    background-color: gray;
-    padding: 100px;
-    margin: 0px;
-    text-align: center;
-    text-decoration: none;
-}
-.estilo__seccion2{
-    grid-area: section2;
-    grid-row: 3/4;
-    align-items: center;
     height: fit-content;
     background-color: gray;
     padding: 100px;
@@ -154,7 +136,15 @@ nav ul li a:hover{
 .estilo__imagen{
     object-fit: cover;
 }
-
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
 /*---Estilos Footer---*/
 
 .footer{
