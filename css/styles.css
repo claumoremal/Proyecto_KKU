@@ -26,7 +26,6 @@ a{
 .contenedorPrincipal__Index{
     display: grid;
     grid-template-areas: 
-        "header"
         "section1"
         "section2"
         "section3"
@@ -35,7 +34,6 @@ a{
 .contenedorPrincipal__venta{
     display: grid;
     grid-template-areas:         
-        "header"
         "section"
         "sectionCards"
         "footer"
@@ -44,7 +42,6 @@ a{
 /*---Estilos header---*/
 
 .header{
-    grid-area: header;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
