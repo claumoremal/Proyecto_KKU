@@ -104,7 +104,7 @@ video {
 }
 .estilo__seccion{
     grid-area: section;
-    height: fit-content;
+    height: 100vh;
     background-color: gray;
     padding: 100px;
     margin: 0px;
@@ -150,9 +150,6 @@ video {
     border-radius: 15px;
     background-color: black;
     color: white;
-}
-.estilo__imagen{
-    object-fit: cover;
 }
 .responsive-iframe {
     position: absolute;
