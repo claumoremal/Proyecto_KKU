@@ -1,0 +1,24 @@
+body{
+    font-family: $fuenteGral;
+    color: black;
+}
+html{
+    font-size: 100%;
+}
+hr{
+    height: 1px;
+    border: 1px solid black;
+    margin: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.estilo__seccion{
+    height: 100vh;
+    background-color: gray;
+    padding: 100px;
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+}

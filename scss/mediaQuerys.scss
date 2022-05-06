@@ -1,0 +1,44 @@
+/*hasta max-width 768px*/
+
+@media(max-width: 768px){
+    .header{
+        flex-flow: column wrap;
+        align-content: center;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center; 
+        li a{
+            margin: 5px;
+            padding: 5px;
+        } 
+    }
+    .estilo__seccion{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .contenedor__cards{
+        flex-direction: column;       
+    }
+    iframe{
+        width: auto;
+        height: auto;
+    }
+    .footer{
+        grid-area: footer;
+        grid-row: 5/6;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        height: fit-content;
+    }
+    .footer__izq{
+        align-items: center;
+    }
+    .footer__logo{
+        display: none;
+    }
+
+}

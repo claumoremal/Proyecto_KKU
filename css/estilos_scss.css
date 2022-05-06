@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;500;600&display=swap");
+/*hasta max-width 768px*/
+@media (max-width: 768px) {
+  .header {
+    flex-flow: column wrap;
+    align-content: center; }
+  nav ul {
+    flex-direction: column;
+    align-items: center; }
+    nav ul li a {
+      margin: 5px;
+      padding: 5px; }
+  .estilo__seccion {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto; }
+  .contenedor__cards {
+    flex-direction: column; }
+  iframe {
+    width: auto;
+    height: auto; }
+  .footer {
+    grid-area: footer;
+    grid-row: 5/6;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    height: fit-content; }
+  .footer__izq {
+    align-items: center; }
+  .footer__logo {
+    display: none; } }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+html {
+  font-size: 100%; }
+
+hr {
+  height: 1px;
+  border: 1px solid black;
+  margin: 40px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.estilo__seccion {
+  height: 100vh;
+  background-color: gray;
+  padding: 100px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none; }
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none; }
+  nav ul li a {
+    margin: 15px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: "Bebas Neue";
+    text-decoration: none;
+    text-transform: uppercase; }
+    nav ul li a:hover {
+      color: grey; }
+
+.estilo__contacto {
+  height: fit-content;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  font-weight: bold; }
+
+.footer {
+  grid-area: footer;
+  grid-row: 5/6;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: fit-content;
+  background-color: black;
+  padding: 15px;
+  width: 100%;
+  margin: 0px;
+  color: white; }
+
+.footer__izq {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  padding: 15px; }
+  .footer__izq a {
+    text-decoration: none;
+    color: white; }
+    .footer__izq a:hover {
+      text-decoration: none;
+      color: grey; }
+
+.footer__logo {
+  height: 150px;
+  width: 150px;
+  padding: 10px; }
+
+.footer__der {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px; }

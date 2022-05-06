@@ -1,0 +1,39 @@
+.footer{
+    grid-area: footer;
+    grid-row: 5/6;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: fit-content;
+    background-color: black;    
+    padding: 15px;
+    width: 100%;
+    margin: 0px;
+    color: white;
+}
+.footer__izq{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+    padding: 15px;
+        a{
+            text-decoration: none;
+            color: white;
+                &:hover{
+                    text-decoration: none;
+                    color: grey;
+                }
+        }            
+}
+.footer__logo{ 
+    height: 150px;   
+    width: 150px;
+    padding: 10px;
+}
+.footer__der{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+}
