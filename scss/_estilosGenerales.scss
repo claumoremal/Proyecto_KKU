@@ -22,3 +22,7 @@ a{
     text-align: center;
     text-decoration: none;
 }
+@mixin imgFormat($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

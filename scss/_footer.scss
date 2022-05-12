@@ -1,6 +1,5 @@
 .footer{
     @extend .header;
-    grid-area: footer;
     height: fit-content;
     background-color: black;    
     padding: 15px;
@@ -35,8 +34,7 @@ $redes:("instagram":rgb(95, 9, 9),"facebook":blue);
     }
 }
 .footer__logo{ 
-    height: 150px;   
-    width: 150px;
+    @include imgFormat(150px, 150px);
     padding: 10px;
 }
 .footer__der{
