@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;500;600&display=swap");
 /*hasta max-width 768px*/
 @media (max-width: 768px) {
-  .header {
+  .header, nav ul, .footer {
     flex-flow: column wrap;
     align-content: center; }
   nav ul {
@@ -56,7 +56,7 @@ a {
   text-align: center;
   text-decoration: none; }
 
-.header {
+.header, nav ul, .footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -64,9 +64,6 @@ a {
   background-color: black; }
 
 nav ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   list-style: none; }
   nav ul li a {
@@ -90,10 +87,6 @@ nav ul {
 
 .footer {
   grid-area: footer;
-  grid-row: 5/6;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   height: fit-content;
   background-color: black;
   padding: 15px;
@@ -113,6 +106,20 @@ nav ul {
     .footer__izq a:hover {
       text-decoration: none;
       color: grey; }
+
+.red--instagram {
+  background: #5f0909;
+  width: 50px;
+  height: 50px; }
+  .red--instagram:hover {
+    background: white; }
+
+.red--facebook {
+  background: blue;
+  width: 50px;
+  height: 50px; }
+  .red--facebook:hover {
+    background: white; }
 
 .footer__logo {
   height: 150px;

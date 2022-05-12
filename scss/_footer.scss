@@ -1,9 +1,6 @@
 .footer{
+    @extend .header;
     grid-area: footer;
-    grid-row: 5/6;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
     height: fit-content;
     background-color: black;    
     padding: 15px;
@@ -25,6 +22,17 @@
                     color: grey;
                 }
         }            
+}
+$redes:("instagram":rgb(95, 9, 9),"facebook":blue);
+@each $red, $color in $redes {
+    .red--#{$red} {
+        background: $color;
+        width: 50px;
+        height: 50px;
+        &:hover {
+            background: white;
+        }
+    }
 }
 .footer__logo{ 
     height: 150px;   
