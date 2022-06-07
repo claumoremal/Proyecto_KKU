@@ -68,7 +68,7 @@ nav ul li a:hover{
 .seccion__video{
     position: relative;
     background-color: black;
-    height: 75vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -102,11 +102,9 @@ video {
     z-index: 1;
 }
 .estilo__seccion{
-    grid-area: section;
-    height: 100vh;
+    grid-area: section;    
     background-color: gray;
-    padding: 100px;
-    margin: 0px;
+    padding: 50px;
     text-align: center;
     text-decoration: none;
 }
@@ -281,7 +279,7 @@ video {
 /*---Media queris---*/
 
 /*hasta max-width 768px*/
-@media(max-width: 768px){
+/* @media(max-width: 768px){
     .header{
         flex-flow: column wrap;
         align-content: center;
@@ -321,5 +319,5 @@ video {
     .footer__logo{
         display: none;
     }
-
-}
+ 
+}*/

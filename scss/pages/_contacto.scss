@@ -1,8 +1,10 @@
-.estilo__contacto{
-    height: fit-content;
-    padding: 15px;
-    margin: auto;
-    text-align: center;
-    display: block;
-    font-weight: bold;
+.background__contacto{
+    background-image: url("../images/handsome-man-biker-travelling-on-mototrcycle.jpg"); /* The image used */
+    height: 100vh;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.section__contacto{
+    color: white;
 }

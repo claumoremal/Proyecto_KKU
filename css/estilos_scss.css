@@ -49,9 +49,8 @@ a {
   color: black; }
 
 .estilo__seccion {
-  height: 100vh;
   background-color: gray;
-  padding: 100px;
+  padding: 50px;
   margin: 0px;
   text-align: center;
   text-decoration: none; }
@@ -77,15 +76,22 @@ nav ul {
     nav ul li a:hover {
       color: grey; }
 
-.estilo__contacto {
-  height: fit-content;
-  padding: 15px;
-  margin: auto;
-  text-align: center;
-  display: block;
-  font-weight: bold; }
+.background__contacto {
+  background-image: url("../images/handsome-man-biker-travelling-on-mototrcycle.jpg");
+  /* The image used */
+  height: 100vh;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */ }
+
+.section__contacto {
+  color: white; }
 
 .footer {
+  align-items: end;
   height: fit-content;
   background-color: black;
   padding: 15px;
@@ -99,6 +105,9 @@ nav ul {
   justify-content: end;
   color: white;
   padding: 15px; }
+  .footer__izq img {
+    width: 50px;
+    height: 50px; }
   .footer__izq a {
     text-decoration: none;
     color: white; }
@@ -106,27 +115,8 @@ nav ul {
       text-decoration: none;
       color: grey; }
 
-.red--instagram {
-  background: #5f0909;
-  width: 50px;
-  height: 50px; }
-  .red--instagram:hover {
-    background: white; }
-
-.red--facebook {
-  background: blue;
-  width: 50px;
-  height: 50px; }
-  .red--facebook:hover {
-    background: white; }
-
-.footer__logo {
-  width: 150px;
-  height: 150px;
-  padding: 10px; }
-
 .footer__der {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  align-items: flex-end;
   padding: 15px; }

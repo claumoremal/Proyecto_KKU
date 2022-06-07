@@ -12,15 +12,15 @@
 </head>
 <body>
     <div>
-        <header data-aos="fade-down" data-aos-duration="1000">
-            <nav class="navbar navbar-expand-lg navbar-expand-md bg-black">
+        <header>
+            <nav class="row navbar navbar-dark navbar-expand-md bg-black">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html"><img src="../images/logo_chico.JPG" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="fs-4 navbar-nav m-auto mb-2 mb-lg-0">
+                        <ul class="fs-4 nav justify-content-center m-auto">
                             <li class="nav-item">
                                 <a class="text-white nav-link active" aria-current="page" href="../index.html">Home</a>
                             </li>
@@ -42,55 +42,113 @@
             </nav>
         </header>
    
-        <div class="estilo__seccion">
-            <section>
-                <h2>Formulario de contacto</h2>
-            </section>
-            <section>         
-                <form>
-                    <div class="row">
-                        <div class="col estilo__contacto">
-                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        <section class="row background__contacto section__contacto pb">
+            <!--header de fromulario-->
+            <h2 class="h2-responsive font-weight-bold text-center my-4">Contáctanos</h2>
+            <!--Section description-->
+            <p class="fs-5 text-center w-responsive mx-auto mb-3">
+                Tienes alguna consulta? Por favor dejanos un mensaje y nuestro equipo te contactará 
+                a la brevedad posible.
+            </p>
+
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-4 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <img src="../images/android_dialer_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                            <p>+598 000 000</p>
+                        </li>
+
+                        <li>
+                            <img src="../images/mail_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                            <p>mail@kku.uy</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-md-7 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="">Nombre</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="telefono" class="">Teléfono</label>
+                                    <input type="number" class="form-control" aria-label="Telefono" title="Por favor ingresa solo números">                                  
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
                         </div>
-                        <div class="col estilo__contacto">
-                            <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="mail">
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject" class="">Asunto</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col estilo__contacto">
-                            <input type="number" class="form-control" placeholder="Telefono" aria-label="Telefono" title="Por favor ingresa solo números">
-                        </div>                    
-                        <div class="col estilo__contacto">
-                            <input type="text" class="form-control" placeholder="Asunto" aria-label="asunto">
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <label for="message">Mensaje</label>
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                </div>
+
+                            </div>
                         </div>
+                        <!--Grid row-->
+
+                    </form>
+
+                    <div class="text-center text-md-left my-4">
+                        <a class="btn btn-outline-light" onclick="document.getElementById('contact-form').submit();">Enviar</a>
                     </div>
-                    <div class="row estilo__contacto">
-                        <textarea class="form-control" name="mensaje" placeholder="Mensaje"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn btn-outline-dark" name="enviarForm"><img src="../images/done_black_36dp.svg" alt=""></button>
-                        <button type="reset" class="btn btn-outline-dark" name="limpiarForm"><img src="../images/delete_outline_black_36dp.svg" alt=""></button>
-                    </div>
-                </form>
-            </section>
-        </div>    
-    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->              
+            </div>
+        </section>  
         <footer class="footer">
             <div class="footer__izq">
                 <a class="footer__izq--a" href="../pages/contacto.html">Contacto</a>
                     <p>mail@kku.uy - +598 000 000</p>
-                <div>                
-                    <a href="https://www.instagram.com/kustomkultureuruguay/"><img class="red--instagram" src="../images/instagram-brands.svg" alt=""></a>
-                    <a href="https://www.facebook.com/kustomkulturemotorcycles"><img class="red--facebook" src="../images/facebook-brands.svg" alt="facebook footer" title="facebook footer"></a>
-                </div>
+                    <div>                
+                        <a href="https://www.instagram.com/kustomkultureuruguay/"><img src="../images/instaLogoWhite.png" alt=""></a>
+                        <a href="https://www.facebook.com/kustomkulturemotorcycles"><img src="../images/logoFbWhite.png" alt="facebook footer" title="facebook footer"></a>
+                    </div>
             </div>
             <div>
-                <img class="footer__logo" src="../images/logo_triangulo_blanco.png" alt="kku footer" title="kku footer">
+                <img class="img-fluid" src="../images/logo_triangulo_blanco.png" alt="kku footer" title="kku footer">
             </div>
             <div class="footer__der">
                 <p>BrainIT 2022 - Todos los derechos reservados</p>
             </div>          
         </footer>
+    </div>
     <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

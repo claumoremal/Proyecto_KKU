@@ -1,5 +1,6 @@
 .footer{
     @extend .header;
+    align-items: end;
     height: fit-content;
     background-color: black;    
     padding: 15px;
@@ -13,6 +14,10 @@
     justify-content: end;
     color: white;
     padding: 15px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
         a{
             text-decoration: none;
             color: white;
@@ -22,24 +27,9 @@
                 }
         }            
 }
-$redes:("instagram":rgb(95, 9, 9),"facebook":blue);
-@each $red, $color in $redes {
-    .red--#{$red} {
-        background: $color;
-        width: 50px;
-        height: 50px;
-        &:hover {
-            background: white;
-        }
-    }
-}
-.footer__logo{ 
-    @include imgFormat(150px, 150px);
-    padding: 10px;
-}
 .footer__der{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    align-items: flex-end;
     padding: 15px;
 }
